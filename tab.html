@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- tab start  -->
+
+    <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent"
+            role="tablist">
+            <li class="mr-2" role="presentation">
+                <a class="inline-block p-4 text-green-400 border-white rounded-t-lg" id="profile-tab"
+                    data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+                    aria-selected="false">How to Apply for XYZ Visa yourself</a>
+
+            </li>
+            <li class="mr-2" role="presentation">
+                <a class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                    id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
+                    aria-selected="false">Hire an expert/consultant for XYZ Visa
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="myTabContent">
+        <div class="hidden p-4 rounded-lg bg-white dark:bg-gray-800" id="profile" role="tabpanel"
+            aria-labelledby="profile-tab">
+           <p class="font-bold text-2xl">About Visa</p> <br>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, hic iste voluptates incidunt eaque voluptatum in adipisci quos illo ab libero aperiam praesentium? Quisquam recusandae officia nihil delectus obcaecati reiciendis.
+           Ducimus nobis molestias hic ab dignissimos eos excepturi consequuntur eligendi, dolorem ad accusantium pariatur eaque, vero odit! Accusamus temporibus at neque. Reiciendis quam nam dolores nobis magnam vero ipsam at!
+           Mollitia iste in praesentium asperiores ut doloribus, corporis cum dicta voluptate cupiditate, maiores repellat, atque dolorum commodi consectetur totam consequuntur? Facere nulla ut error iure alias aperiam sed veritatis inventore.</p>
+        <br>
+        <button type="button" class="text-white mt-2 bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-20 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ">Get Visa</button>
+           <p class="font-bold"> Document Requirements</p>
+           <br>
+           <div class="tab1">
+            <button class="tablinks active" onclick="openCity(event, 'app_from')" id="defaultOpen">Visa Application Form</button>
+            <button class="tablinks" onclick="openCity(event, 'photo')">Passport Photo</button>
+            <button class="tablinks" onclick="openCity(event, 'previous')">Previous Passports if any</button>
+          </div>
+          
+          <div id="app_from" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+          
+          <div id="photo" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="previous" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+           
+        </div>
+        <div class="hidden p-4 rounded-lg bg-white dark:bg-gray-800" id="dashboard" role="tabpanel"
+            aria-labelledby="dashboard-tab">
+            <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-6">
+                <div
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="grid grid-cols-2 ">
+                        <p class="text-green-500 uppercase">Australia</p>
+                        <img src="./img/Ellipse 119.png" class="w-8 h-8 ml-auto" alt="" srcset="">
+                    </div>
+                    <p class="font-bold mt-3">Australia student visa</p>
+                    <div class="grid grid-cols-2">
+                        <div class="mt-4">
+                            <p>Duration</p> 
+                            <p>12 months</p>
+                        </div>
+                        <div class="mt-4">
+                            <p>Approx Cost</p> 
+                            <p>$ 1000</p>
+                        </div>
+                    </div>
+                    <button type="button" class="text-white mt-4 bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium w-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Hire Consultant</button>
+                </div>
+                <div
+                class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="grid grid-cols-2 ">
+                    <p class="text-green-500 uppercase">Australia</p>
+                    <img src="./img/Ellipse 119.png" class="w-8 h-8 ml-auto" alt="" srcset="">
+                </div>
+                <p class="font-bold mt-3">Australia student visa</p>
+                <div class="grid grid-cols-2">
+                    <div class="mt-4">
+                        <p>Duration</p> 
+                        <p>12 months</p>
+                    </div>
+                    <div class="mt-4">
+                        <p>Approx Cost</p> 
+                        <p>$ 1000</p>
+                    </div>
+                </div>
+                <button type="button" class="text-white mt-4 bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium w-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Hire Consultant</button>
+            </div>
+            <div
+            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div class="grid grid-cols-2 ">
+                <p class="text-green-500 uppercase">Australia</p>
+                <img src="./img/Ellipse 119.png" class="w-8 h-8 ml-auto" alt="" srcset="">
+            </div>
+            <p class="font-bold mt-3">Australia student visa</p>
+            <div class="grid grid-cols-2">
+                <div class="mt-4">
+                    <p>Duration</p> 
+                    <p>12 months</p>
+                </div>
+                <div class="mt-4">
+                    <p>Approx Cost</p> 
+                    <p>$ 1000</p>
+                </div>
+            </div>
+            <button type="button" class="text-white mt-4 bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium w-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Hire Consultant</button>
+        </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- tab end  -->
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

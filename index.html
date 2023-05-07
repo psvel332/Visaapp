@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="relative px-4 py-4 flex sticky top-0 justify-between items-center bg-white">
+        <a class="text-3xl font-bold leading-none flex lg:ml-32 " href="#">
+            <img src="./img/Ellipse 6.png" class="w-4 h-4 mt-2" alt="" srcset="">
+            <p class="text-2xl text_green">HelpWithMyVisa</p>
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-4 w-4 fill-current text_green" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul
+            class="hidden  top-1/2 left-1/2 gap-6 transform -translate-y-1/2 -translate-x-1/2 lg:flex mt-2 lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="text-base text_green font-bold hover:text-gray-500" href="#">Home</a></li>
+
+            <li><a class="text-base text-gray-400 " href="#">About</a></li>
+
+            <li><a class="text-base text-gray-400 hover:text-gray-500" href="#">News</a></li>
+
+            <li><a class="text-base text-gray-400 hover:text-gray-500" href="#">Blog</a></li>
+
+            <li><a class="text-base text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none flex " href="#">
+                    <img src="./img/Ellipse 6.png" class="w-3 h-3" alt="" srcset="">
+                    <p class="text-base text_green">HelpWithMyVisa</p>
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">About</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">News</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">Blog</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <!-- nav end -->
+    <!-- bg nav start -->
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 mx-auto">
+            <div class="mx-auto pt-67 pl-120 ">
+                <p class="text-3xl text-green-700 font-bold leading-relaxed ">Your Gateway to Global </p>
+                <p class="text-3xl text-green-700 font-bold leading-relaxed ">Opportunities</p>
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum iste, ipsam inventore laboriosam
+                    Excepturi hic sapiente nobis.</p>
+                    <div >
+                        <img src="./img/Passport.png" class="absolute mt-1 " alt="" srcset="">
+                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 selectimg w-1/2 mt-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Choose a country</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                          </select>
+                    </div>
+                    <div class="flex justify-center w-1/2">
+                    <button type="button" class="text-white mt-2 bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Search</button>
+            
+                </div>
+                </div>
+            <div>
+                <img src="./img/undraw_adventure_re_ncqp 1.png" width="500px" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- bg nav end -->
+    <!-- catagory section start -->
+<p class=" justify-center flex oblique">Trending Visas From</p>
+<div class="grid  lg:grid-cols-2 gap-6 justify-center">
+    <p class="text-2xl lg:text-4xl md:text-4xl text-green-700 mt-2 ml-auto static pl-4 lg:relative  md:relative  left-150 ">The world’s best countries</p>
+    <div class="ml-auto pl-10">
+    <button type="button" class="text-white mt-2 bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">View More</button>
+</div>
+</div>
+    <!-- catagory section end -->
+        <!-- Work process section start -->
+<p class=" justify-center flex oblique">Working Process</p>
+<p class="text-2xl lg:text-3xl md:text-4xl text-green-700 mt-2 justify-center flex ml-auto static pl-4 ">How it Works</p>
+<div class="sectionbg p-10 mt-6    ">
+    <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1  container mx-auto ">
+        <div class="px-20">
+            <img src="./img/Group 215.png" alt="" srcset="">
+            <br>
+            <p class="text-gray font-bold text-2xl">Book An Appointment</p>
+            <br>
+            <p>Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. </p>
+        </div>
+        <div class="px-20">
+            <img src="./img/undraw_experts_re_i40h 1.png" alt="" srcset="">
+            <br>
+            <p class="text-gray font-bold text-2xl">Immigration Experts</p>
+            <br>
+            <p>Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. </p>
+        </div>
+        <div class="px-20">
+            <img src="./img/undraw_package_arrived_63rf 1.png" alt="" srcset="">
+            <br>
+            <p class="text-gray font-bold text-2xl">Apply Online Visa</p>
+            <br>
+            <p>Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. </p>
+        </div>
+    </div>
+
+</div>
+<section class="Testimonial-slider-wrapper2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 hhhh">
+                <div class="swiper-container testimonial-design-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-carosuel-item2">
+                                <div class="testimonial-carosuel-item-content2">
+                                    <div class="quote-icon2">
+                                        <span aria-hidden="true" class="icon_quotations2"></span>
+                                    </div>
+                                    <div class="ratting-star2">
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star-half"></span>
+                                    </div>
+                                    <p class="item-conten-custom2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                        deleniti molestiae magnam. Laudantium non excepturi aut ipsum earum
+                                        voluptatibus in, similique quia iusto? Delectus corporis obcaecati,
+                                        molestias atque cum laborum quia! Quo consequatur, sint repellendus officia
+                                        voluptatum vero quae facere.
+                                    </p>
+                                    <div class="testimonial-carosuel-item-profile-item2">
+                                        <div class="testimonial-carosuel-item-profile-reviewer2">
+                                            <img class="img-fluid" src="https://i.ibb.co/bWcrr4p/team1.png" alt="image">
+                                        </div>
+                                        <div class="testimonial-carosuel-item-profile-descrip2">
+                                            <div class="testimonial-carosuel-item-profile-name2">
+                                                <h4 class="profile-name">Md Tofajjal Hossen</h4>
+                                            </div>
+                                            <div class="testimonial-carosuel-item-profile-degree2">
+                                                <span class="profile-deg-description2">CEO,</span>
+                                                <span class="profile-autor-designation2">Tofajjal Company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="swiper-slide">
+                            <div class="testimonial-carosuel-item2">
+                                <div class="testimonial-carosuel-item-content2">
+                                    <div class="quote-icon2">
+                                        <span aria-hidden="true" class="icon_quotations2"></span>
+                                    </div>
+                                    <div class="ratting-star2">
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star-half"></span>
+                                    </div>
+                                    <p class="item-conten-custom2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                        deleniti molestiae magnam. Laudantium non excepturi aut ipsum earum
+                                        voluptatibus in, similique quia iusto? Delectus corporis obcaecati,
+                                        molestias atque cum laborum quia! Quo consequatur, sint repellendus officia
+                                        voluptatum vero quae facere.
+                                    </p>
+                                    <div class="testimonial-carosuel-item-profile-item2">
+                                        <div class="testimonial-carosuel-item-profile-reviewer2">
+                                            <img class="img-fluid" src="https://i.ibb.co/F4d2xtC/team.png" alt="image">
+                                        </div>
+                                        <div class="testimonial-carosuel-item-profile-descrip2">
+                                            <div class="testimonial-carosuel-item-profile-name2">
+                                                <h4 class="profile-name">md tofajjal hossen</h4>
+                                            </div>
+                                            <div class="testimonial-carosuel-item-profile-degree2">
+                                                <span class="profile-deg-description2">CEO,</span>
+                                                <span class="profile-autor-designation2">Tofajjal Company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="swiper-slide">
+                            <div class="testimonial-carosuel-item2">
+                                <div class="testimonial-carosuel-item-content2">
+                                    <div class="quote-icon2">
+                                        <span aria-hidden="true" class="icon_quotations2"></span>
+                                    </div>
+                                    <div class="ratting-star2">
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star-half"></span>
+                                    </div>
+                                    <p class="item-conten-custom2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                        deleniti molestiae magnam. Laudantium non excepturi aut ipsum earum
+                                        voluptatibus in, similique quia iusto? Delectus corporis obcaecati,
+                                        molestias atque cum laborum quia! Quo consequatur, sint repellendus officia
+                                        voluptatum vero quae facere.
+                                    </p>
+                                    <div class="testimonial-carosuel-item-profile-item2">
+                                        <div class="testimonial-carosuel-item-profile-reviewer2">
+                                            <img class="img-fluid" src="https://i.ibb.co/bWcrr4p/team1.png" alt="image">
+                                        </div>
+                                        <div class="testimonial-carosuel-item-profile-descrip2">
+                                            <div class="testimonial-carosuel-item-profile-name2">
+                                                <h4 class="profile-name">md tofajjal hossen</h4>
+                                            </div>
+                                            <div class="testimonial-carosuel-item-profile-degree2">
+                                                <span class="profile-deg-description2">CEO,</span>
+                                                <span class="profile-autor-designation2">Tofajjal Company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="swiper-slide">
+                            <div class="testimonial-carosuel-item2">
+                                <div class="testimonial-carosuel-item-content2">
+                                    <div class="quote-icon2">
+                                        <span aria-hidden="true" class="icon_quotations2"></span>
+                                    </div>
+                                    <div class="ratting-star2">
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star"></span>
+                                        <span aria-hidden="true" class="fas fa-star-half"></span>
+                                    </div>
+                                    <p class="item-conten-custom2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                        deleniti molestiae magnam. Laudantium non excepturi aut ipsum earum
+                                        voluptatibus in, similique quia iusto? Delectus corporis obcaecati,
+                                        molestias atque cum laborum quia! Quo consequatur, sint repellendus officia
+                                        voluptatum vero quae facere.
+                                    </p>
+                                    <div class="testimonial-carosuel-item-profile-item2">
+                                        <div class="testimonial-carosuel-item-profile-reviewer2">
+                                            <img class="img-fluid" src="https://i.ibb.co/F4d2xtC/team.png" alt="image">
+                                        </div>
+                                        <div class="testimonial-carosuel-item-profile-descrip2">
+                                            <div class="testimonial-carosuel-item-profile-name2">
+                                                <h4 class="profile-name">md tofajjal hossen</h4>
+                                            </div>
+                                            <div class="testimonial-carosuel-item-profile-degree2">
+                                                <span class="profile-deg-description2">CEO,</span>
+                                                <span class="profile-autor-designation2">Tofajjal company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination color-p"></div>
+                </div>
+                  <div class="swiper-button-prev"><i class="lnr lnr-chevron-left"></i></div>
+                <div class="swiper-button-next"><i class="lnr lnr-chevron-right" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Work process section end -->
+ <!-- footer -->
+ 
+<footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full container">
+      <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div>
+            <div class="flex">
+                <img src="./img/Ellipse 6.png" class="w-4 h-4 lg:mt-2" alt="" srcset="">
+            <p class="lg:text-2xl text_green font-semibold">HelpWithMyVisa</p>
+            </div>
+            <div class="mt-20">
+            <p class="text-2xl text-gray-700 mt-4">Follow Us</p>
+            <div class="flex mt-4 space-x-6  md:mt-4">
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+
+            </div>
+        </div> 
+        </div>
+        <div>
+            <h2 class="mb-6 text-2xl font-semibold text-gray-900  dark:text-white">Quick Link</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Link 1</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Link 2</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Link 3</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Link 4</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-2xl font-semibold text-gray-900  dark:text-white">Recent News</h2>
+            <div class="grid grid-cols-2">
+<div class="img">
+    <img src="./img/undraw_adventure_re_ncqp 1.png" class="w-28 " alt="" srcset="">
+</div>
+<div>
+    <a>Blog Title</a><br>
+    <a>3 days</a>
+</div>
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="img">
+                    <img src="./img/undraw_package_arrived_63rf 1.png" class="w-28 " alt="" srcset="">
+                </div>
+                <div>
+                    <a>Blog Title</a><br>
+                    <a>3 days</a>
+                </div>
+                            </div>
+          
+        </div>
+        <div>
+            <h2 class="mb-6 text-2xl font-semibold text-gray-900  dark:text-white">Contact Us</h2>
+            <h2 class="mb-6 text-base text-gray-900  dark:text-white">Address</h2>
+            <h2 class="mb-6 text-base  text-gray-900  dark:text-white">Reach Us</h2>
+
+        </div>
+    </div>
+
+    </div>
+</footer>
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

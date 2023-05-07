@@ -1,0 +1,207 @@
+p{
+    font-family: Nunito Sans;
+}
+a{
+    font-family: Dancing Script;
+}
+.text_green{
+color: #42B883;
+}
+.text_green_hover:active{
+    color: #42B883;
+    }
+.bg_green{
+    background-color: #42B883;
+}
+.pt-67{
+    padding-top: 67px;
+}
+.pl-120{
+    padding-left: 80px;
+}
+.left-150{
+    left: 150px;
+}
+.sectionbg{
+    background-color: #A0DBC1;
+}
+.oblique{
+    font-style: oblique;
+}
+.text-gray{
+    color: #3F3D56;
+}
+.selectimg{
+padding-left: 32px;
+}* {box-sizing: border-box}
+
+/* Style the tab */
+.tab1 {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 20%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab1 */
+.tab1 button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 6px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+  background-color: #fff;
+  color: #42B883;
+}
+
+/* Create an active/current "tab1 button" class */
+.tab1 button.active {
+  background-color: #fff;
+  color: #42B883;
+}
+
+/* Style the tab1 content */
+.tab1content {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+@media (max-width: 600px) {
+    .pt-67{
+        padding-top: 0px;
+    }
+    .pl-120{
+        padding-left: 10px;
+    }
+  }
+  
+.hhhh {
+    position: relative;
+    padding: 100px 50px;
+    background: rgba(225, 232, 240, 0.5);
+    box-shadow: 1px 6px 80px 0px #ccd1dc;
+}
+
+.testimonial-carosuel-item2 {
+position: relative;
+}
+.testimonial-carosuel-item2:before {
+    position: absolute;
+    content: "8";
+    font-size: 130px;
+    left: 0;
+    right: auto;
+    z-index: -1;
+    color: #ff0000;
+    top: -52px;
+    opacity: .3;
+}
+.item-conten-custom2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #909eab;
+    line-height: 30px;
+    text-align: center;
+}
+
+.quote-icon2 {
+    position: absolute;
+    /* transform: rotate(180deg);
+     right: 0; 
+    font-size: 80px;
+    color: #000;
+    left: 0;
+    top: -24px;
+     text-align: center; 
+     margin: 0 auto; */
+}
+.ratting-star2 {
+    color: #ffc107;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.testimonial-carosuel-item-profile-item2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.testimonial-carosuel-item-profile-reviewer2 {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+.testimonial-carosuel-item-profile-descrip2 {
+    margin-left: 50px;
+}
+.swiper-pagination-bullets span {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.6s ease 0s;
+    -webkit-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    display: inline-block;
+    text-indent: -9999px;
+    filter: brightness(50%);
+    border-radius: 0;
+    border-style: solid;
+    box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+    border-radius: 110px 110px 110px 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullets span:nth-child(1) {
+    background-image: url("https://i.ibb.co/bWcrr4p/team1.png");
+  
+}
+.swiper-pagination-bullets span:nth-child(2) {
+    background-image: url("https://i.ibb.co/F4d2xtC/team.png");
+}
+.swiper-pagination-bullets span:nth-child(3) {
+    background-image: url("https://i.ibb.co/bWcrr4p/team1.png");
+}
+.swiper-pagination-bullets span:nth-child(4) {
+    background-image: url("https://i.ibb.co/F4d2xtC/team.png");
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    filter: brightness(100%);
+    transform: translateY(-10px);
+}
+
+.swiper-pagination-bullet {
+    background: #909eab none repeat scroll 0 0;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    outline: none;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    outline: none;
+}
+.Testimonial-slider-wrapper2 .testimonial-design-2 .swiper-pagination-bullets {
+    position: relative !important;
+}
