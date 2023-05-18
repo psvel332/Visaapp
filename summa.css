@@ -1,0 +1,16 @@
+.navimg{
+    background-image: url(./navbar.png);
+}
+.active{
+    font-weight: bold;
+    color: #ff66c4;
+}
+.pink{
+    color: #ff66c4;
+}
+
+@media screen and (max-width: 600px) {
+    .pl67{
+        padding-left: 67px;
+    }
+  }
