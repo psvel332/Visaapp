@@ -13,4 +13,23 @@
     .pl67{
         padding-left: 67px;
     }
+    
+  }
+  .cart2{
+    display: none;
+  }
+@media screen and (max-width: 612px) {
+    
+    .cart1{
+    display: none;
+    }
+    .cart2{
+        display: block;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    
+    .cart2{
+        font-size: 13px;
+    }
   }
